@@ -1,87 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Trade Room - Mayank Raj</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      text-align: center;
-    }
-    .header {
-      background: #6bd14b;
-      padding: 15px;
-      font-size: 26px;
-      font-weight: bold;
-      color: #0b2ea8;
-      text-decoration: underline;
-    }
-    .profile {
-      margin-top: 25px;
-    }
-    .profile img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      border: 6px solid #b9a7ff;
-      object-fit: cover;
-    }
-    .count {
-      margin-top: 15px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .points {
-      margin-top: 20px;
-      font-size: 22px;
-    }
-    .points p {
-      margin: 15px 0;
-    }
-    .join-text {
-      font-size: 24px;
-      margin-top: 25px;
-    }
-    .btn {
-      display: block;
-      margin: 30px auto;
-      background: #4a46d8;
-      color: white;
-      padding: 18px;
-      width: 90%;
-      max-width: 350px;
-      font-size: 22px;
-      border-radius: 40px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>The Trade Room - Mayank Raj</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title {
+    background: #6bd44b;
+    color: #0b2cff;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .profile-wrap {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4); /* SHADOW */
+    margin-bottom: 20px;
+  }
+
+  .profile-wrap img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .text {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: #4b3cff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(75,60,255,0.5);
+  }
+
+  .countdown {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+  }
+</style>
 </head>
+
 <body>
 
-  <div class="header">THE TRADE ROOM<br>MAYANK RAJ</div>
+<div class="title">
+  THE TRADE ROOM<br>MAYANK RAJ
+</div>
 
-  <div class="profile">
-    <img src="profile.jpg">
-  </div>
+<div class="profile-wrap">
+  <img src="profile.jpg" alt="Profile">
+</div>
 
-  <div class="count">20,000+ ACTIVE TRADERS</div>
+<div class="text">20,000+ ACTIVE TRADERS</div>
+<div class="text">NIFTY / BANKNIFTY / SENSEX / CRYPTO</div>
+<div class="text">DAILY 100+ POINTS</div>
+<div class="text">FREE 4–5 CALLS DAILY</div>
 
-  <div class="points">
-    <p>• NIFTY / BANKNIFTY / SENSEX</p>
-    <p>• CRYPTO</p>
-    <p>• DAILY 100+ POINTS</p>
-    <p>• FREE 4–5 CALLS DAILY</p>
-  </div>
+<a class="btn" href="https://t.me/+66HsI08AQqRkMDZl" target="_blank">
+  FREE TELEGRAM CHANNEL
+</a>
 
-  <div class="join-text">JOIN MY TELEGRAM CHANNEL 👇👇👇</div>
+<div class="countdown">
+  Redirecting in <span id="time">5</span> seconds...
+</div>
 
-  <a class="btn" hrefhttps://t.me/+66HsI08AQqRkMDZltarget="_blank">
-    FREE TELEGRAM CHANNEL
-  </a>
+<script>
+  let time = 5;
+  const el = document.getElementById("time");
+
+  const timer = setInterval(() => {
+    time--;
+    el.innerText = time;
+    if (time === 0) {
+      clearInterval(timer);
+      window.location.href = "https://t.me/+66HsI08AQqRkMDZl";
+    }
+  }, 1000);
+</script>
 
 </body>
 </html>
